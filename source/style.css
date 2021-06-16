@@ -1,0 +1,94 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+
+div {
+    margin: auto;
+}
+
+canvas {
+    position: absolute;
+}
+
+.menuItem {
+    border: 1px solid black;
+    padding: 5px;
+    font-size: .75rem;
+    background-color: #fafafa;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.menuItem * {
+    padding: 5px;
+}
+
+#canvasDiv {
+    position: relative;
+    width: 80%;
+    height: 80%;
+}
+
+#controlBar {
+    display: flex;
+    border: 5px ridge gray;
+    width: 80%;
+}
+
+#stringDiv {
+    flex: 1;
+    overflow: hidden;
+}
+
+#stringDiv > * {
+    justify-content: start;
+    margin: 0;
+}
+
+#inputDiv, #autoDiv {
+    display: flex;
+}
+
+#stringInputContainer {
+    flex: 1;
+}
+
+#stringInput {
+    width: 95%;
+    margin: 0;
+}
+
+#currentString, #testStatus {
+    display: flex;
+}
+
+#currentString {
+    overflow-x: auto;
+}
+
+#controlBar > * {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+    margin: 0;
+}
+
+#stepLabel, #statusLabel, #stepDisplay, #set, #stringInput {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#stepDisplay {
+    display: flex;
+    margin: auto;
+}
+

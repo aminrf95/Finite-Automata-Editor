@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Finite Automata Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/favicon.png"/>
+    <script type="module" src="main.js" defer></script>
+</head>
+<body>
+<div id="canvasDiv"></div>
+<div id="controlBar">
+
+    <div id="stepDiv">
+        <button type="button" id="step">Step</button>
+        <div id="autoDiv">
+            <button type="button" id="autoButton">Auto-Step</button>
+            <select name="Speed" id="speedSelect">
+                <option value="1">x 1</option>
+                <option value="2">x 2</option>
+                <option value="3">x 3</option>
+                <option value="4">x 4</option>
+                <option value="5">x 5</option>
+                <option value="10">x 10</option>
+                <option value="50">x 50</option>
+                <option value="100">x 100</option>
+            </select>
+        </div>
+        <button type="button" id="pauseButton">Pause</button>
+        <button type="button" id="resetButton">Reset</button>
+    </div>
+
+    <div id="stringDiv">
+        <div id="currentString">
+            <label id="stepLabel">Input: </label>
+            <div id="stepDisplay"></div>
+        </div>
+        <div id="testStatus">
+            <label id="statusLabel">Status: </label>
+            <div id="statusDisplay"></div>
+        </div>
+        <div id="inputDiv">
+            <button type="button" id="set">Set Input String</button>
+            <div id="stringInputContainer"><input type="text" id="stringInput"></div>
+        </div>
+    </div>
+
+    <div id="fileDiv">
+        <button type="button" id="newButton">New FA</button>
+        <button type="button" id="saveButton">Save FA</button>
+        <button type="button" id="loadButton">Load FA</button>
+        <input type="file" id="fileInput" accept=".txt">
+    </div>
+</div>
+
+</body>
+</html>
